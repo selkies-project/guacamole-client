@@ -842,7 +842,7 @@ Guacamole.Keyboard = function Keyboard(element) {
                 if (!no_repeat[keysym])
                     key_repeat_timeout = window.setTimeout(function() {
                         key_repeat_interval = window.setInterval(function() {
-                            guac_keyboard.onkeyup(keysym);
+                            //guac_keyboard.onkeyup(keysym);
                             guac_keyboard.onkeydown(keysym);
                         }, 50);
                     }, 500);
